@@ -1,3 +1,14 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+  get 'static_pages/home'
+
+  get 'static_pages/submission_success'
+
+  get 'static_pages/faq'
+
+  root to: 'static_pages#home'
+  get '/', to: 'static_pages#home'
+
+  resources :ideas
+
 end
