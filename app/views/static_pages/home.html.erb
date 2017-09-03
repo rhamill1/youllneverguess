@@ -1,1 +1,12 @@
 <h3>Yinz on the home page n at!</h3>
+
+
+<%= form_for :idea, url: "/ideas", method: "post" do |f| %>
+  <h5>Idea</h5><br>
+  <%= f.text_field :idea_name %>
+  <h5>More detail</h5><br>
+  <%= f.text_area :description %>
+  <h5>Author, Email, Optional</h5><br>
+  <%= f.text_area :author %>
+  <%= f.submit "Save idea" %>
+<% end %>

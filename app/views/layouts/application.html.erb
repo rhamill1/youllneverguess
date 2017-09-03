@@ -9,6 +9,17 @@
   </head>
 
   <body>
+
+    <div class="wrap">
+      <% if flash[:error] %>
+        <%= flash[:error] %>
+      <% end %>
+      <% if flash[:success] %>
+        <%= flash[:success] %>
+      <% end %>
+    </div>
+
     <%= yield %>
+
   </body>
 </html>
