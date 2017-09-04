@@ -14,15 +14,6 @@
 
   <body>
 
-    <div class='flash-message'>
-      <% if flash[:error] %>
-        <%= flash[:error] %>
-      <% end %>
-      <% if flash[:success] %>
-        <%= flash[:success] %>
-      <% end %>
-    </div>
-
     <%= yield %>
 
   </body>

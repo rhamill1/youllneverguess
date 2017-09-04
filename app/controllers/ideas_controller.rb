@@ -7,7 +7,7 @@ class IdeasController < ApplicationController
   def create
     @idea = Idea.create(idea_params)
     if @idea.save
-      flash[:success] = 'idea Created!'
+      flash[:success] = 'Idea Created!'
       redirect_to root_path
     else
       flash[:error] = @idea.errors.full_messages.join(' ')

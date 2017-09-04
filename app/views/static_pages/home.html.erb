@@ -3,14 +3,25 @@
     <h1>You'll Never Guess</h1>
     <p>Beard portland keytar migas farm-to-table. Marfa kogi vegan literally. Salvia selvage wolf banjo plaid irony distillery taiyaki bushwick offal. Poutine cardigan tote bag chartreuse flexitarian polaroid, lomo brunch. Pinterest you probably haven't heard of them master cleanse viral farm-to-table vice. Typewriter 90's disrupt jianbing lumbersexual. +1 kale chips vaporware franzen messenger bag thundercats wolf activated charcoal pok pok kickstarter shabby chic. Master cleanse cliche adaptogen etsy drinking vinegar. Locavore typewriter 90's, hella XOXO tumblr cred af pickled knausgaard pop-up.</p>
   </div>
-
   <div id='submit-idea'>
+    <div class='submit-response'>
+      <% if flash[:error] %>
+        <h3>
+          <%= flash[:error] %>
+        </h3>
+      <% end %>
+      <% if flash[:success] %>
+        <h3>
+          <%= flash[:success] %>
+        </h3>
+      <% end %>
+    </div>
     <h3>Submit Your Idea</h3>
     <%= form_for :idea, url: "/ideas", method: "post" do |f| %>
       <h5>Idea</h5>
       <%= f.text_field :idea_name %>
 
-      <h5>More detail</h5>
+      <h5>More Detail</h5>
       <%= f.text_area :description %>
 
       <h5>Author, Email, Optional</h5>
