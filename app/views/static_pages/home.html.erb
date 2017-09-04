@@ -1,12 +1,22 @@
-<h3>Yinz on the home page n at!</h3>
+<div class='home-body'>
+  <div id='youll-never-guess'>
+    <h1>You'll Never Guess</h1>
+    <p>Beard portland keytar migas farm-to-table. Marfa kogi vegan literally. Salvia selvage wolf banjo plaid irony distillery taiyaki bushwick offal. Poutine cardigan tote bag chartreuse flexitarian polaroid, lomo brunch. Pinterest you probably haven't heard of them master cleanse viral farm-to-table vice. Typewriter 90's disrupt jianbing lumbersexual. +1 kale chips vaporware franzen messenger bag thundercats wolf activated charcoal pok pok kickstarter shabby chic. Master cleanse cliche adaptogen etsy drinking vinegar. Locavore typewriter 90's, hella XOXO tumblr cred af pickled knausgaard pop-up.</p>
+  </div>
 
+  <div id='submit-idea'>
+    <h3>Submit Your Idea</h3>
+    <%= form_for :idea, url: "/ideas", method: "post" do |f| %>
+      <h5>Idea</h5>
+      <%= f.text_field :idea_name %>
 
-<%= form_for :idea, url: "/ideas", method: "post" do |f| %>
-  <h5>Idea</h5><br>
-  <%= f.text_field :idea_name %>
-  <h5>More detail</h5><br>
-  <%= f.text_area :description %>
-  <h5>Author, Email, Optional</h5><br>
-  <%= f.text_area :author %>
-  <%= f.submit "Save idea" %>
-<% end %>
+      <h5>More detail</h5>
+      <%= f.text_area :description %>
+
+      <h5>Author, Email, Optional</h5>
+      <%= f.text_area :author %><br>
+
+      <%= f.submit "Submit Idea" %>
+    <% end %>
+  </div>
+</div>

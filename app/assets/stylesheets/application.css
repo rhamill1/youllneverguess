@@ -13,3 +13,26 @@
  *= require_tree .
  *= require_self
  */
+
+
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+input[type='submit'] {
+  margin-top: 1em;
+  border: none;
+  background: #1d1d1d;
+  color: white;
+  border: none;
+  font-size: 12px;
+  padding: 12px 16px;
+  border-radius: 3px;
+  transition-duration: 0.4s;
+}
+
+input[type='submit']:hover {
+  background: #1abc9c;
+  cursor: pointer;
+}
