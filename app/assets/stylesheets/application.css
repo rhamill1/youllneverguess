@@ -21,7 +21,7 @@ body {
 }
 
 input[type='submit'] {
-  margin-top: 1em;
+  margin-bottom: 5em;
   border: none;
   background: #1d1d1d;
   color: white;

@@ -15,6 +15,11 @@
           <%= flash[:success] %>
         </h3>
       <% end %>
+      <% if flash[:notice] %>
+        <h3>
+          <%= flash[:notice] %>
+        </h3>
+      <% end %>
     </div>
     <h3>Submit Your Idea</h3>
     <%= form_for :idea, url: "/ideas", method: "post" do |f| %>
@@ -26,7 +31,10 @@
 
       <h5>Author, Email, Optional</h5>
       <%= f.text_area :author %><br>
-
+      <div class='captcha'>
+        <%= show_simple_captcha %>
+      </div>
+      <br>
       <%= f.submit "Submit Idea" %>
     <% end %>
   </div>
