@@ -36,6 +36,11 @@
   margin: 1em;
 }
 
+.simple_captcha_refresh_button a {
+  text-decoration: none;
+  color: #1abc9c;
+}
+
 @media
  /*(max-width : 736px){ /*NON-IPHONE*/
  (max-device-width : 736px){ /*IPHONE 6*/
@@ -75,5 +80,37 @@
       height: 3em;
       background: #1abc9c;
     }
+
+  .simple_captcha{border: 1px solid #ccc; padding: 5px !important;}
+  .simple_captcha,
+  .simple_captcha div{display: table;}
+  .simple_captcha .simple_captcha_field,
+  .simple_captcha .simple_captcha_image{
+    border: 2px solid #ccc;
+    margin: 0px 0px 2px 0px !important;
+    padding: 0px !important;
+    width: 100% !important;
+  }
+
+  .simple_captcha
+  .simple_captcha
+  .simple_captcha_field input {
+    width: 100% !important;
+    font-size: 4em;
+    border: none;
+    background-color: #efefef;
+  }
+
+  .simple_captcha_image img {
+    width: 70%;
+  }
+
+  .simple_captcha_label h3 {
+    font-size: 3em;
+  }
+
+  .simple_captcha_refresh_button a {
+    font-size: 4em;
+  }
 
 }
