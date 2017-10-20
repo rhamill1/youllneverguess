@@ -1,25 +1,39 @@
 <style type="text/css">
+
   .simple_captcha{border: 1px solid #ccc; padding: 5px !important;}
   .simple_captcha,
   .simple_captcha div{display: table;}
   .simple_captcha .simple_captcha_field,
   .simple_captcha .simple_captcha_image{
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
     margin: 0px 0px 2px 0px !important;
     padding: 0px !important;
+    width: 100% !important;
   }
-  .simple_captcha .simple_captcha_image img{
-    margin: 0px !important;
-    padding: 0px !important;
-    width: 110px !important;
-  }
-  .simple_captcha .simple_captcha_label{font-size: 12px;}
-  .simple_captcha .simple_captcha_field input{
-    width: 150px !important;
-    font-size: 16px;
+
+  .simple_captcha
+  .simple_captcha
+  .simple_captcha_field input {
+    width: 100% !important;
+    font-size: 4em;
     border: none;
     background-color: #efefef;
   }
+
+  .simple_captcha_image img {
+    width: 70%;
+  }
+
+  .simple_captcha_label h3 {
+    font-size: 3em;
+  }
+
+  .simple_captcha_refresh_button a {
+    font-size: 4em;
+    text-decoration: none;
+    color: #1abc9c;
+  }
+
 </style>
 
 <div class='simple_captcha'>
@@ -32,7 +46,9 @@
   </div>
 
   <div class='simple_captcha_label'>
-    <%= simple_captcha_options[:label] %>
+    <h3>
+      <%= simple_captcha_options[:label] %>
+    </h3>
   </div>
 
   <div class='simple_captcha_refresh_button'>

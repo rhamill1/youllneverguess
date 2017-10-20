@@ -35,3 +35,45 @@
   display: inline-block;
   margin: 1em;
 }
+
+@media
+ /*(max-width : 736px){ /*NON-IPHONE*/
+ (max-device-width : 736px){ /*IPHONE 6*/
+
+    h1 {
+      font-size: 5em;
+    }
+
+    #youll-never-guess p {
+      font-size: 2em;
+      margin: 0 1em;
+    }
+
+    h3 {
+      font-size: 4em;
+    }
+
+    h5 {
+      font-size: 3em;
+    }
+
+
+    textarea, input {
+      width: 90%;
+      height: 2em;
+      font-size: 5em;
+    }
+
+    input {
+      padding: 0em;
+    }
+
+    input[type='submit'] {
+      -webkit-appearance: none;
+      border-radius: 0;
+      font-size: 1em !important;
+      height: 3em;
+      background: #1abc9c;
+    }
+
+}
