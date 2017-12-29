@@ -4,8 +4,73 @@
 
 
 .home-body {
-  padding-top: 1em;
   text-align: center;
+  width: 70%;
+  margin: auto;
+}
+
+.landing h1 {
+  text-align: left;
+  font-size: 4em;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin-top: 15px;
+  font-family: 'Knewave', cursive;
+  text-transform: uppercase;
+}
+
+.landing-img {
+  background-size: cover;
+  height: 550px;
+  background-image: url(https://i.imgur.com/QIQhCuz.jpg);
+  text-align: center;
+  position: relative;
+  background-repeat: no-repeat;
+  z-index: -2;
+}
+
+.white {
+  text-align: justify;
+}
+
+h3 {
+  font-size: 3em;
+  margin-bottom: 0;
+  font-family: 'Knewave', cursive;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 19px;
+  font-weight: 300;
+  margin-top: 0;
+  letter-spacing: 1px;
+}
+
+.banana {
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 300px;
+  background-image: url(https://imgur.com/wfvpVkV.png);
+}
+
+.hand {
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 300px;
+  background-image: url(https://i.imgur.com/AWFI9W7.png);
+}
+
+.wand {
+  background-repeat: no-repeat;
+  /*background-size: contain;*/
+  /*width: 700px;*/
+  height: 600px;
+  /*background-position: left bottom;*/
+  /*background-size: 100% 100%;*/
+  background-size: cover;
+  background-image: url(https://i.imgur.com/HEODJqc.png);
 }
 
 #youll-never-guess h1 {
@@ -19,6 +84,18 @@
 
 #submit-idea {
   padding-top: 5em;
+}
+
+textarea, input {
+  /*width: 60%;*/
+  height: 3em;
+  font-size: 1em;
+  border: 3px solid #ccc;
+}
+
+.catcha {
+  background: red;
+  width: 500px !important;
 }
 
 #submit-idea h5 {

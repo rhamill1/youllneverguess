@@ -1,7 +1,58 @@
 <div class='home-body'>
-  <div id='youll-never-guess'>
-    <h1>You'll Never Guess</h1>
-    <p>Beard portland keytar migas farm-to-table. Marfa kogi vegan literally. Salvia selvage wolf banjo plaid irony distillery taiyaki bushwick offal. Poutine cardigan tote bag chartreuse flexitarian polaroid, lomo brunch. Pinterest you probably haven't heard of them master cleanse viral farm-to-table vice. Typewriter 90's disrupt jianbing lumbersexual. +1 kale chips vaporware franzen messenger bag thundercats wolf activated charcoal pok pok kickstarter shabby chic. Master cleanse cliche adaptogen etsy drinking vinegar. Locavore typewriter 90's, hella XOXO tumblr cred af pickled knausgaard pop-up.</p>
+
+  <div class='landing'>
+    <h1>Coy Toy Box</h1>
+    <div class='landing-img'></div>
+  </div>
+
+  <div class='white'>
+    <div class='banana'></div>
+    <h3>About us</h3>
+    <p>
+      <strong>What’s in the box? You’ll never guess.</strong>
+      That’s what our good friend Matt told us as he recounted a salacious story about the time his movers almost found his and his partner’s strangest sex toy. <strong>“It’s the most incriminating thing I own, and it’s nothing like you’ve ever seen,”</strong> he said with a smile.
+      <br><br>
+      What could it be? We were filled with curiosity. A X, we guessed?! No. A Y?! No. A Z?! Try again.
+      <br><br>
+      Frustrated, we gave up. But we still wondered. Over the years, we’ve asked many others what they think it could be, and we’ve gotten answers ranging from hilarious to awe-inspiring to downright twisted.
+      <br><br>
+      According to Matt, we still haven’t guessed correctly. But in posing this question to our friends, we realized that people have some pretty cool ideas. The conversation became less about what was actually in the box and more about what could be in the box. That is, if it existed. We learned that there are tons of toys that people can dream up, but that aren’t real. Yet.
+    </p>
+  </div>
+
+
+  <div class='white'>
+    <div class='hand'></div>
+    <h3>How it works</h3>
+    <p>
+      It got us thinking, why not try to bring these fantasies to life? So we’re turning to the place where imagination truly runs wild: the internet. <strong>Bring us your ideas – your hot, kinky, silly, outlandish, bold, and bright ideas.</strong>
+      <br><br>
+      With your help, we’ll pick the best ones, get them made, and make (wet) dreams come true.
+      <br><br>
+      Want an eight-armed octopus dildo for your wild orgies? Done. Alien finger anal probe? Yes. Something else? Let’s do it.
+      <br><br>
+      We’re taking ideas through DATE, TIME. After that, we’ll be letting people vote for their favorites. Then, we’ll work with our partner factories to bring the winning ideas to life. This could take <strong>6-9 months  </strong><img src='https://raw.githubusercontent.com/Keyamoon/IcoMoon-Free/master/PNG/16px/240-evil.png'> , but it’s kind of like tantric -- it’s better if you wait.
+      <br><br>
+      And no matter how strange your idea, you’re welcomed here. Come one, come all. (See what we did there?)
+      <br><br>
+      But seriously, the only reasons we’ll draw the line and reject your idea are if it would violate another person’s privacy, serves as a personal attack, or is otherwise spiteful. That is -- racism, sexism, xenophobia, or other such forms of hate are not welcome. No demeaning ideas or commentary based on race, ethnicity, religion, gender identity, disability, or sexual orientation will be considered. Other than those (very reasonable) restrictions, we want you to go wild.
+    </p>
+  </div>
+  <div class='white'>
+    <!-- <div class='wand'></div> -->
+    <h3>US made, high grade silicone</h3>
+    <p>
+      No matter what ideas win, we promise to produce <strong>well-designed, thoughtfully made products</strong>. You shouldn’t have to choose between pleasuring yourself and poisoning yourself, so all products will be
+      <br>
+      non-toxic,<br>
+      body-safe, <br>
+      phthalate-free products. <br>
+      And because we’re a love-for-all type of community, <strong>everything will be manufactured non-exploitatively, under ethical labor standards at trusted partner factories in the USA.</strong>
+    </p>
+    <h3>Donation to LGBTQ+</h3>
+    <p>
+      We’ll also be donating X% of proceeds from product sales to PARTNER ORGANIZATION because we believe that REASON WE CHOSE THIS ORG.
+    </p>
   </div>
   <div id='submit-idea'>
     <div class='submit-response'>
@@ -27,12 +78,32 @@
       <%= f.text_field :idea_name %>
 
       <h5>More Detail</h5>
-      <%= f.text_area :description %>
+      <%= f.text_field :description %>
 
       <h5>Author, Email, Optional</h5>
-      <%= f.text_area :author %><br>
+      <%= f.text_field :author %><br>
       <div class='captcha'>
-        <%= show_simple_captcha %>
+
+        <div class='simple_captcha'>
+          <div class='simple_captcha_image'>
+            <%= simple_captcha_options[:image] %>
+          </div>
+
+          <div class='simple_captcha_field'>
+            <%= simple_captcha_options[:field] %>
+          </div>
+
+        <!--   <div class='simple_captcha_label'>
+            <h3>
+              <%= simple_captcha_options[:label] %>
+            </h3>
+          </div> -->
+
+          <div class='simple_captcha_refresh_button'>
+            <%= simple_captcha_options[:refresh_button] %>
+          </div>
+        </div>
+
       </div>
       <br>
       <div class='submit-button'>
