@@ -15,7 +15,7 @@
  */
 
 header {
-  background-color: #1abc9c;
+  background-color: #00a8b3;
   height: 6em;
   text-align: right;
   position: fixed;
@@ -47,7 +47,6 @@ header li {
 
 header a {
   color: white;
-  text-decoration: none;
 }
 
 .contact-border {
@@ -62,6 +61,8 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+a {text-decoration: none;}
+
 input[type='submit'] {
   margin-bottom: 5em;
   border: none;
@@ -75,6 +76,6 @@ input[type='submit'] {
 }
 
 input[type='submit']:hover {
-  background: #1abc9c;
+  background: #00a8b3;
   cursor: pointer;
 }
