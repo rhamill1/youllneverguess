@@ -14,6 +14,48 @@
  *= require_self
  */
 
+header {
+  background-color: #1abc9c;
+  height: 6em;
+  text-align: right;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+
+.inner-header {
+  width: 70%;
+  margin: auto;
+}
+
+.header-title a {
+  margin-left: 5px;
+  float: left;
+  font-size: 4em;
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-family: 'Knewave', cursive;
+  text-transform: uppercase;
+}
+
+header li {
+  display: inline-block;
+  padding-top: 30px;
+  padding-right: 2em;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+.contact-border {
+  border-style: solid;
+  border-color: white;
+  border-width: 2px;
+  padding: 10px;
+}
 
 body {
   margin: 0;
